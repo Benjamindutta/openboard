@@ -66,3 +66,62 @@ body{
     
 }
 
+.pentool{
+    height: 7rem;
+    width: 10rem;
+    border: 2px rgb(224, 28, 208) solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 7rem;
+    left: 37vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    /* align-items: flex-start; */
+}
+
+.colorTool{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.color{
+    display: flex;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    border:2px rgb(224, 28, 208) solid ;
+}
+#penRange{
+    width: 100%;
+    color: blue;
+}
+.colorYellow{
+    background-color: yellow;
+}
+.colorRed{
+    background-color: red;
+}
+.colorBlue{
+    background-color: blue;
+}
+
+#eraserRange{
+    width: 100%;
+}
+.eraserTool{
+    height: 3.5rem;
+    width: 10rem;
+    border: 2px rgb(224, 28, 208) solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    top: 7rem;
+    left: 37vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+
