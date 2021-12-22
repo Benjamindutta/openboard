@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.mainbody{
+    height:100vh;
+    width: 100vw;
+}
+
+.menu-btn{
+    height: 3.5rem;
+    width: 3.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #b2bec3;
+    cursor: pointer;
+}
+
+.tool-bar{
+    height: 3.5rem;
+    width: 25rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    top: 3rem;
+    left: calc((100vw - 25rem) / 2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tool-bar>*{
+    font-size: 1.5rem;
+    color: #b2bec3;
+}
+
+.menu-btn>span{
+    font-size: 2rem;
+}
+
+.toolBarAni{
+    animation-name: toolBarAni;
+    animation-duration: .3s;
+}
+
+@keyframes toolBarAni {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
