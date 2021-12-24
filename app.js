@@ -4,7 +4,9 @@ let socket = require('socket.io');
 
 let app = express();
 
-let server = app.listen(5000, () => {
+let port = process.env.PORT || 5000;
+
+let server = app.listen(port, () => {
     console.log('app.listen is working');
 })
 app.use(express.static('public'))
