@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <canvas>
+
+    </canvas>
     <div class="mainbody">
         <div class="menu-btn">
             <span class="material-icons-outlined">
@@ -18,7 +21,7 @@
             </span>
         </div>
         <div class="pentool" style="display: none;">
-            <input type="range" id="penRange" min=" 2" max="10">
+            <input type="range" id="penRange" min="2" to max="10" value="2">
             <div class="colorTool">
                 <div class="color colorYellow"></div>
                 <div class="color colorRed"></div>
@@ -26,7 +29,7 @@
             </div>
         </div>
         <div class="eraserTool" style="display: none;">
-            <input type="range" id="eraserRange" min=" 2" max="10">
+            <input type="range" id="eraserRange" min="2" max="10" value="2">
         </div>
         <div class="tool-bar toolBarAni" style="display: none;">
             <span class="material-icons-outlined pen">
@@ -35,28 +38,32 @@
             <span class="material-icons-outlined eraser">
                 bento
             </span>
-            <span class="material-icons-outlined">
+            <span class="material-icons-outlined stickynote">
                 note_add
             </span>
-            <span class="material-icons-outlined">
+            <span class="material-icons-outlined imageIn">
                 image
             </span>
-            <span class="material-icons-outlined">
+            <span class="material-icons-outlined download">
                 file_download
             </span>
-            <span class="material-icons-outlined">
-                file_upload
-            </span>
-            <span class="material-icons-outlined">
+            <span class="material-icons-outlined undo">
                 undo
             </span>
-            <span class="material-icons-outlined">
+            <span class="material-icons-outlined redo">
                 redo
             </span>
 
         </div>
     </div>
+    <script src="https://cdn.socket.io/4.4.0/socket.io.min.js"
+        integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj"
+        crossorigin="anonymous"></script>
+    <script>
+        let socket = io.connect('http://localhost:5000')
+    </script>
     <script src="./script.js"></script>
+    <script src="canvas.js"></script>
 </body>
 
 </html>
